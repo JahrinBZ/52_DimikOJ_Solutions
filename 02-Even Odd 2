@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    int T;
+    scanf("%d", &T);
+    char N[101];
+    for (int i = 0; i < T; i++) {
+        scanf("%s", N);
+        
+        
+        int last_digit = N[strlen(N) - 1];
+
+        if (last_digit % 2 == 0)
+            printf("even\n");
+        else
+            printf("odd\n");
+    }
+
+    return 0;
+}
