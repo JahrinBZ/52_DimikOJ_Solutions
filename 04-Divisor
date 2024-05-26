@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(){
+    int T;
+    int a[T];
+    scanf("%d",&T);
+    for (int j = 0 ; j < T ; j++)
+        {
+            scanf("%d",&a[j]);
+        }
+    for(int i = 0; i<T ; i++)
+    {
+        printf("Case %d:",i+1);
+        for ( int k = 1 ; k<= a[i] ; k++)
+        {
+            if (  a[i] % k == 0)
+            printf(" %d",k);   
+        }
+        
+        printf("\n");
+    }
+    return 0;
+}
